@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apagar Contatos</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Use Bootstrap background color */
+            padding: 20px; /* Add some padding for better spacing */
+        }
+        h1 {
+            color: #007bff; /* Bootstrap primary color */
+        }
+        form {
+            max-width: 400px; /* Set a maximum width for the form */
+            margin: auto; /* Center the form */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Contatos [Apagar]</h1>
+        <form name="frmApagarCont" method="post" action="agen_apagar.jsp" class="mt-4">
+            <div class="form-group">
+                <label for="id">Id:</label>
+                <input type="text" class="form-control" name="id" id="id">
+            </div>
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+            <button type="submit" class="btn btn-danger" name="apagar">Apagar</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
